@@ -46,7 +46,7 @@ export const ActionResumoVendas = () => {
     setDataAno(mesAtual);
     setDataPesquisaAnoAnterior(anoAnteriorPesquisa);
     setDataPrimeiroDia(primeiroDiaMes);
-    console.log(horaAtual, ' horaAtual');
+
     setHora(getHoraAtual());
     const intervalId = setInterval(() => {
     setHora(getHoraAtual());
@@ -155,7 +155,7 @@ export const ActionResumoVendas = () => {
   const {data: dadosTotalTesoura = [], 
       error: errorTotalTesoura, 
       isLoading: isLoadingTotalTesoura,   refetch: refetchTesoura } = useQuery(
-      'venda-total',
+      'vendas-total-to',
       async () => {
         const response = await get(`/vendas-total-to?dataPesquisa=${dataPesquisa}&idGrupo=1`);   
         
@@ -193,17 +193,7 @@ export const ActionResumoVendas = () => {
       }
   );
 
-  const { data: dadosTotalOutleet = [], error: errorTotalOutleet, 
-      isLoading: isLoadingTotalOutleet, refetch: refetchOutleet } = useQuery(
-      'venda-total',
-      async () => {
-        const response = await get(`/vendas-total-to?dataPesquisa=${dataPesquisa}&idGrupo=4`);   
-        return response.data;
-      },
-      {
-        enabled: Boolean(dataPesquisa), staleTime: 0, refetchInterval: 12000
-      }
-  );
+
 
   function devolverDiaSemana(diaSemana) {
     var dias = ['Domingo', 'Segunda-Feira', 'Terca-Feira', 'Quarta-Feira', 'Quinta-Feira', 'Sexta-Feira', 'Sabado'];
