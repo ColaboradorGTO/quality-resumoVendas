@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react"
+import React, { Fragment, useEffect, useState } from "react"
 import { ResultadoResumo } from "../../Components/ResumoCards/ResultadoResumo"
 import { formatMoeda } from "../../../../utils/formatMoeda"
 import { toFloat } from "../../../../utils/toFloat"
