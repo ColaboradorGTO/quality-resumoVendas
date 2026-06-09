@@ -421,7 +421,7 @@ export const ResultadoResumo = ({
         </div>
 
 
-        <div className="col-sm-6 col-lg-4 col-xl-6 col-xl-6 p-3" >
+        <div className="col-sm-4 col-lg-4 col-xl-6 col-xl-6 p-3" >
           {cardVendasContigencia && (
             <div
               className=" bg-primary-300 rounded overflow-hidden position-relative text-white mb-g"
@@ -461,7 +461,7 @@ export const ResultadoResumo = ({
           )}
         </div>
 
-        <div className="col-sm-6 col-lg-4 col-xl-6 col-xl-6 p-3" >
+        <div className="col-sm-4 col-lg-4 col-xl-6 col-xl-6 p-3" >
           {cardVendasContigenciaDia && (
             <div
               className=" bg-primary-300 rounded overflow-hidden position-relative text-white mb-g"
