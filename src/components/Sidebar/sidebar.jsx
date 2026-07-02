@@ -1,7 +1,13 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { useSidebar } from './SidebarContext';
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown, FaDigitalTachograph } from "react-icons/fa";
+import { FaCashRegister, FaRegLightbulb, FaRegMoneyBillAlt, } from "react-icons/fa";
+
 import { AiFillPieChart, AiOutlineBarChart, AiOutlineMenuFold, AiOutlineMenuUnfold, AiOutlinePieChart } from 'react-icons/ai';
+import { BsCloudUpload, BsGraphUpArrow } from 'react-icons/bs';
+import { MdOutlineCloudUpload } from 'react-icons/md';
+import { SiSimpleanalytics } from 'react-icons/si';
+import { PiChartPieSliceThin } from 'react-icons/pi';
 
 export const MenuSidebarAdmin = ({ componentToShow, handleShowComponent }) => {
   const storedModule = localStorage.getItem('moduloselecionado');
@@ -30,7 +36,6 @@ export const MenuSidebarAdmin = ({ componentToShow, handleShowComponent }) => {
 
   const renderSideBarItems = () => {
 
-
     return (
       <ul id="js-nav-menu" className="nav-menu">
 
@@ -41,12 +46,29 @@ export const MenuSidebarAdmin = ({ componentToShow, handleShowComponent }) => {
               e.preventDefault();
               handleClick("/#");
             }}
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
           >
+            <span
+              style={{
+                fontSize: "19px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginRight: "10px",
+              }}
+            >
+              <BsGraphUpArrow />
+            </span>
+
             <span className="nav-link-text">
               Comparativo Vendas do Dia/Hora
             </span>
           </a>
         </li>
+
 
         <li className={activeLink === "/comparativoVendasContigencia" ? "active" : ""}>
           <a
@@ -55,12 +77,65 @@ export const MenuSidebarAdmin = ({ componentToShow, handleShowComponent }) => {
               e.preventDefault();
               handleClick("/comparativoVendasContigencia");
             }}
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
           >
+            <span
+              style={{
+                fontSize: "28px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginRight: "10px",
+              }}
+            >
+              <PiChartPieSliceThin />
+
+            </span>
+
             <span className="nav-link-text">
               Comparativo Vendas do Dia/Hora Em Contigência
             </span>
           </a>
         </li>
+
+
+        <li className={activeLink === "/integracoesEnviadasMindset" ? "active" : ""}>
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              handleClick("/integracoesEnviadasMindset");
+            }}
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <span
+              style={{
+                fontSize: "28px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginRight: "10px",
+              }}
+            >
+
+              <BsCloudUpload />
+
+            </span>
+
+            <span className="nav-link-text">
+              Integrações Enviadas para o Mindset
+            </span>
+          </a>
+        </li>
+
+
+
 
         {/*  <li className={activeLink === URL ? "active" : ""}>
           <a href="/#" onClick={() => handleClick(URL)}>

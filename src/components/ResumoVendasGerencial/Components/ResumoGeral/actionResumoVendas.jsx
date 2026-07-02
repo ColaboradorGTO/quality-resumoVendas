@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react"
-import { ResultadoResumo } from "../../Components/ResumoCards/ResultadoResumo"
+import { ResultadoResumo } from "../../../ResumoCards/ResultadoResumo"
 import { formatMoeda } from "../../../../utils/formatMoeda"
 import { toFloat } from "../../../../utils/toFloat"
 import { FaCashRegister, FaRegLightbulb, FaRegMoneyBillAlt } from "react-icons/fa"
