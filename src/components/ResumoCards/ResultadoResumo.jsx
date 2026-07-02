@@ -5,7 +5,6 @@ import { FaCashRegister, FaRegLightbulb } from "react-icons/fa";
 import { MdOutlinePayment } from "react-icons/md";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 
-
 export const ResultadoResumo = ({
   cardVendas,
   valorVendas,
@@ -15,7 +14,6 @@ export const ResultadoResumo = ({
   valorVendasAnterior,
   textoMesVendasAnterior,
   porcentoVendas,
-
 
   cardTotal,
   valorTotal,
@@ -117,6 +115,48 @@ export const ResultadoResumo = ({
   textoMesVendasContigenciaAnteriorMG,
   totalVendasContigenciaAnteriorMG,
   textoVendasContigenciaAnteriorMG,
+
+  cardTotalIntegracaoLocation,
+  textoTotalIntegracaoLocation,
+  valorTotalIntegracaoLocation,
+  totalIntegracaoLocation,
+  textoSmallTotalIntegracaoLocation,
+  textoIconeTotalIntegracaoLocation,
+
+  cardTotalIntegracaoMetric,
+  textoTotalIntegracaoMetric,
+  valorTotalIntegracaoMetric,
+  totalIntegracaoMetric,
+  textoSmallTotalIntegracaoMetric,
+  textoIconeTotalIntegracaoMetric,
+
+  cardTotalOpenOrder,
+  textoTotalOpenOrder,
+  valorTotalOpenOrder,
+  totalOpenOrder,
+  textoSmallTotalOpenOrder,
+  textoIconeTotalOpenOrder,
+
+  cardTotalIntegracaoProduct,
+  textoTotalIntegracaoProduct,
+  valorTotalIntegracaoProduct,
+  totalIntegracaoProduct,
+  textoSmallTotalIntegracaoProduct,
+  textoIconeTotalIntegracaoProduct,
+
+  cardTotalIntegracaoProductPrice,
+  textoTotalIntegracaoProductPrice,
+  valorTotalIntegracaoProductPrice,
+  totalIntegracaoProductPrice,
+  textoSmallTotalIntegracaoProductPrice,
+  textoIconeTotalIntegracaoProductPrice,
+
+  cardTotalIntegracaoSupplier,
+  textoTotalIntegracaoSupplier,
+  valorTotalIntegracaoSupplier,
+  totalIntegracaoSupplier,
+  textoSmallTotalIntegracaoSupplier,
+  textoIconeIntegracaoSupplier,
 
   textoIconeMG,
 
@@ -420,7 +460,6 @@ export const ResultadoResumo = ({
           )}
         </div>
 
-
         <div className="col-sm-4 col-lg-4 col-xl-6 col-xl-6 p-3" >
           {cardVendasContigencia && (
             <div
@@ -503,6 +542,7 @@ export const ResultadoResumo = ({
           )}
         </div>
 
+
         <div className="col-sm-6 col-lg-4 col-xl-4 col-xl-4 p-3" >
           {cardVendasContigenciaDF && (
             <div
@@ -528,16 +568,16 @@ export const ResultadoResumo = ({
                 {/*   <small className="position-absolute pos-right pos-top"> {textoMesVendasContigenciaAnteriorDF} </small> */}
               </div>
               <div
-              className="position-absolute opacity-75"
+                className="position-absolute opacity-75"
                 style={{
                   fontSize: '3rem',
                   fontWeight: 'semibold',
                   lineHeight: 1,
                   whiteSpace: 'nowrap',
                   pointerEvents: 'none',
-                  right: '12px',       
-                  top: '50%',          
-                  transform: 'translateY(-50%)'  
+                  right: '12px',
+                  top: '50%',
+                  transform: 'translateY(-50%)'
                 }}
               >
                 {textoIconeDF}
@@ -581,9 +621,9 @@ export const ResultadoResumo = ({
                   lineHeight: 1,
                   whiteSpace: 'nowrap',
                   pointerEvents: 'none',
-                  right: '12px',       
-                  top: '50%',          
-                  transform: 'translateY(-50%)'  
+                  right: '12px',
+                  top: '50%',
+                  transform: 'translateY(-50%)'
                 }}
               >
                 {textoIconeGO}
@@ -627,9 +667,9 @@ export const ResultadoResumo = ({
                   lineHeight: 1,
                   whiteSpace: 'nowrap',
                   pointerEvents: 'none',
-                  right: '12px',       
-                  top: '50%',          
-                  transform: 'translateY(-50%)'  
+                  right: '12px',
+                  top: '50%',
+                  transform: 'translateY(-50%)'
                 }}
               >
                 {textoIconeMG}
@@ -640,6 +680,280 @@ export const ResultadoResumo = ({
           )}
         </div>
 
+        <div className="col-sm-6 col-lg-4 col-xl-4 col-xl-4 p-3" >
+          {cardTotalIntegracaoLocation && (
+            <div
+              className=" bg-primary-300 rounded overflow-hidden position-relative text-white mb-g"
+              style={{ padding: '5px 10px 10px 10px', width: '100%' }}
+            >
+              <div className="">
+                <div style={{ justifyContent: 'space-between', display: 'flex' }}>
+
+                  <h5 className="fw-500 mt-3 mb-3 p-2"> {textoTotalIntegracaoLocation} </h5>
+
+                </div>
+                <h1 className="display-3 d-inline-block l-h-n m-0 fw-500 mt-1 mb-1 p-2">
+                  {valorTotalIntegracaoLocation}
+                </h1>
+
+              </div>
+              <div className="">
+                <div style={{ margin: '0px' }} >
+                  <span className="position-relative  h1 ml-2 mr-3">{totalIntegracaoLocation}</span>
+                  <span className="position-relative  h5 "> {textoSmallTotalIntegracaoLocation}</span>
+                </div>
+                {/*   <small className="position-absolute pos-right pos-top"> {textoMesVendasContigenciaAnteriorDF} </small> */}
+              </div>
+              <div
+                className="position-absolute opacity-75"
+                style={{
+                  fontSize: '3rem',
+                  fontWeight: 'semibold',
+                  lineHeight: 1,
+                  whiteSpace: 'nowrap',
+                  pointerEvents: 'none',
+                  right: '12px',
+                  top: '50%',
+                  transform: 'translateY(-50%)'
+                }}
+              >
+                {textoIconeTotalIntegracaoLocation}
+              </div>
+
+            </div>
+
+          )}
+        </div>
+
+        <div className="col-sm-6 col-lg-4 col-xl-4 col-xl-4 p-3" >
+          {cardTotalIntegracaoMetric && (
+            <div
+              className=" bg-info-300 rounded overflow-hidden position-relative text-white mb-g"
+              style={{ padding: '5px 10px 10px 10px', width: '100%' }}
+            >
+              <div className="">
+                <div style={{ justifyContent: 'space-between', display: 'flex' }}>
+
+                  <h5 className="fw-500 mt-3 mb-3 p-2"> {textoTotalIntegracaoMetric} </h5>
+
+                </div>
+                <h1 className="display-3 d-inline-block l-h-n m-0 fw-500 mt-1 mb-1 p-2">
+                  {valorTotalIntegracaoMetric}
+                </h1>
+
+              </div>
+              <div className="">
+                <div style={{ margin: '0px' }} >
+                  <span className="position-relative  h1 ml-2 mr-3">{totalIntegracaoMetric}</span>
+                  <span className="position-relative  h5 "> {textoSmallTotalIntegracaoMetric}</span>
+                </div>
+                {/*  <small className="position-absolute pos-right pos-top"> {textoMesVendasContigenciaAnteriorGO} </small> */}
+              </div>
+
+              <div
+                className="position-absolute opacity-75"
+                style={{
+                  fontSize: '3rem',
+                  fontWeight: 'semibold',
+                  lineHeight: 1,
+                  whiteSpace: 'nowrap',
+                  pointerEvents: 'none',
+                  right: '12px',
+                  top: '50%',
+                  transform: 'translateY(-50%)'
+                }}
+              >
+                {textoIconeTotalIntegracaoMetric}
+              </div>
+
+            </div>
+
+          )}
+        </div>
+
+        <div className="col-sm-6 col-lg-4 col-xl-4 col-xl-4 p-3" >
+          {cardTotalOpenOrder && (
+            <div
+              className=" bg-success-300 rounded overflow-hidden position-relative text-white mb-g"
+              style={{ padding: '5px 10px 10px 10px', width: '100%' }}
+            >
+              <div className="">
+                <div style={{ justifyContent: 'space-between', display: 'flex' }}>
+
+                  <h5 className="fw-500 mt-3 mb-3 p-2"> {textoTotalOpenOrder} </h5>
+
+                </div>
+                <h1 className="display-3 d-inline-block l-h-n m-0 fw-500 mt-1 mb-1 p-2">
+                  {valorTotalOpenOrder}
+                </h1>
+
+              </div>
+              <div className="">
+                <div style={{ margin: '0px' }} >
+                  <span className="position-relative  h1 ml-2 mr-3">{totalOpenOrder}</span>
+                  <span className="position-relative  h5 "> {textoSmallTotalOpenOrder}</span>
+                </div>
+                {/*  <small className="position-absolute pos-right pos-top"> {textoMesVendasContigenciaAnteriorMG} </small> */}
+              </div>
+
+              <div
+                className="position-absolute opacity-75"
+                style={{
+                  fontSize: '3rem',
+                  fontWeight: 'semibold',
+                  lineHeight: 1,
+                  whiteSpace: 'nowrap',
+                  pointerEvents: 'none',
+                  right: '12px',
+                  top: '50%',
+                  transform: 'translateY(-50%)'
+                }}
+              >
+                {textoIconeTotalOpenOrder}
+              </div>
+
+            </div>
+
+          )}
+        </div>
+
+
+        <div className="col-sm-6 col-lg-4 col-xl-4 col-xl-4 p-3" >
+          {cardTotalIntegracaoProduct && (
+            <div
+              className=" bg-warning-300 rounded overflow-hidden position-relative text-white mb-g"
+              style={{ padding: '5px 10px 10px 10px', width: '100%' }}
+            >
+              <div className="">
+                <div style={{ justifyContent: 'space-between', display: 'flex' }}>
+
+                  <h5 className="fw-500 mt-3 mb-3 p-2"> {textoTotalIntegracaoProduct} </h5>
+
+                </div>
+                <h1 className="display-3 d-inline-block l-h-n m-0 fw-500 mt-1 mb-1 p-2">
+                  {valorTotalIntegracaoProduct}
+                </h1>
+
+              </div>
+              <div className="">
+                <div style={{ margin: '0px' }} >
+                  <span className="position-relative  h1 ml-2 mr-3">{totalIntegracaoProduct}</span>
+                  <span className="position-relative  h5 "> {textoSmallTotalIntegracaoProduct}</span>
+                </div>
+                {/*   <small className="position-absolute pos-right pos-top"> {textoMesVendasContigenciaAnteriorDF} </small> */}
+              </div>
+              <div
+                className="position-absolute opacity-75"
+                style={{
+                  fontSize: '3rem',
+                  fontWeight: 'semibold',
+                  lineHeight: 1,
+                  whiteSpace: 'nowrap',
+                  pointerEvents: 'none',
+                  right: '12px',
+                  top: '50%',
+                  transform: 'translateY(-50%)'
+                }}
+              >
+                {textoIconeTotalIntegracaoProduct}
+              </div>
+
+            </div>
+
+          )}
+        </div>
+
+        <div className="col-sm-6 col-lg-4 col-xl-4 col-xl-4 p-3" >
+          {cardTotalIntegracaoProductPrice && (
+            <div
+              className=" bg-danger-300 rounded overflow-hidden position-relative text-white mb-g"
+              style={{ padding: '5px 10px 10px 10px', width: '100%' }}
+            >
+              <div className="">
+                <div style={{ justifyContent: 'space-between', display: 'flex' }}>
+
+                  <h5 className="fw-500 mt-3 mb-3 p-2"> {textoTotalIntegracaoProductPrice} </h5>
+
+                </div>
+                <h1 className="display-3 d-inline-block l-h-n m-0 fw-500 mt-1 mb-1 p-2">
+                  {valorTotalIntegracaoProductPrice}
+                </h1>
+
+              </div>
+              <div className="">
+                <div style={{ margin: '0px' }} >
+                  <span className="position-relative  h1 ml-2 mr-3">{totalIntegracaoProductPrice}</span>
+                  <span className="position-relative  h5 "> {textoSmallTotalIntegracaoProductPrice}</span>
+                </div>
+                {/*  <small className="position-absolute pos-right pos-top"> {textoMesVendasContigenciaAnteriorGO} </small> */}
+              </div>
+
+              <div
+                className="position-absolute opacity-75"
+                style={{
+                  fontSize: '3rem',
+                  fontWeight: 'semibold',
+                  lineHeight: 1,
+                  whiteSpace: 'nowrap',
+                  pointerEvents: 'none',
+                  right: '12px',
+                  top: '50%',
+                  transform: 'translateY(-50%)'
+                }}
+              >
+                {textoIconeTotalIntegracaoProductPrice}
+              </div>
+
+            </div>
+
+          )}
+        </div>
+
+        <div className="col-sm-6 col-lg-4 col-xl-4 col-xl-4 p-3" >
+          {cardTotalIntegracaoSupplier && (
+            <div
+              className=" bg-primary-300 rounded overflow-hidden position-relative text-white mb-g"
+              style={{ padding: '5px 10px 10px 10px', width: '100%' }}
+            >
+              <div className="">
+                <div style={{ justifyContent: 'space-between', display: 'flex' }}>
+
+                  <h5 className="fw-500 mt-3 mb-3 p-2"> {textoTotalIntegracaoSupplier} </h5>
+
+                </div>
+                <h1 className="display-3 d-inline-block l-h-n m-0 fw-500 mt-1 mb-1 p-2">
+                  {valorTotalIntegracaoSupplier}
+                </h1>
+
+              </div>
+              <div className="">
+                <div style={{ margin: '0px' }} >
+                  <span className="position-relative  h1 ml-2 mr-3">{totalIntegracaoSupplier}</span>
+                  <span className="position-relative  h5 "> {textoSmallTotalIntegracaoSupplier}</span>
+                </div>
+                {/*  <small className="position-absolute pos-right pos-top"> {textoMesVendasContigenciaAnteriorMG} </small> */}
+              </div>
+
+              <div
+                className="position-absolute opacity-75"
+                style={{
+                  fontSize: '3rem',
+                  fontWeight: 'semibold',
+                  lineHeight: 1,
+                  whiteSpace: 'nowrap',
+                  pointerEvents: 'none',
+                  right: '12px',
+                  top: '50%',
+                  transform: 'translateY(-50%)'
+                }}
+              >
+                {textoIconeIntegracaoSupplier}
+              </div>
+
+            </div>
+
+          )}
+        </div>
 
       </div>
     </Fragment>

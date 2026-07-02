@@ -7,6 +7,7 @@ import { MenuSidebarAdmin } from "../components/Sidebar/sidebar";
 
 const ActionVendasContigencia = lazy(() => import("../components/ComparativoVendaContigencia/ResumoGeral/actionResumoVendasContigencia").then(module => ({ default: module.ActionVendasContigencia })));
 const ActionResumoVendas = lazy(() => import("../components/ResumoVendasGerencial/Components/ResumoGeral/actionResumoVendas").then(module => ({ default: module.ActionResumoVendas })));
+const ActionResumoIntegracoesEnviadas = lazy(() => import("../components/ActionIntegracaoesEnviadasMindset/ResumoGeral/actionResumoIntegracaosEnviadas").then(module => ({ default: module.ActionResumoIntegracoesEnviadas })));
 
 export const DashBoardResumoVendas = ({ }) => {
   const [componentToShow, setComponentToShow] = useState("");
@@ -22,9 +23,12 @@ export const DashBoardResumoVendas = ({ }) => {
     case "/comparativoVendasContigencia":
       component = <ActionVendasContigencia />;
       break;
-    default:
+    case "/integracoesEnviadasMindset":
+      component = <ActionResumoIntegracoesEnviadas />;
+      break;
       component = null;
       break;
+    default:
   }
 
   const handleShowComponent = (componentName) => {

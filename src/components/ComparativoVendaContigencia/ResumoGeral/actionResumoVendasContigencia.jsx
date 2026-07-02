@@ -5,7 +5,7 @@ import { ButtonType } from "../../Buttons/ButtonType";
 import { getDataAtual, getDataAtualMesAnoAnterior, getDataDiaMesAnoAnterior, getDataPrimeiroDiaMes, getHoraAtual, mesAno, mesAnoAnterior } from "../../../utils/dataAtual"
 import { useQuery } from "react-query"
 import { get } from "../../../api/funcRequest"
-import { ResultadoResumo } from "../ResumoCards/ResultadoResumo"
+import { ResultadoResumo } from "../../ResumoCards/ResultadoResumo"
 import { dataFormatada } from "../../../utils/dataFormatada"
 import { ActionListaVendasContigenciaDetalhe } from "./actionListaVendasContigencia"
 import Swal from 'sweetalert2';

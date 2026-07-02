@@ -4,7 +4,6 @@ import { Column } from 'primereact/column';
 import { formatMoeda } from "../../../../utils/formatMoeda";
 import { toFloat } from "../../../../utils/toFloat";
 
-
 export const ActionListaVendasTesoura = ({ dadosTotalTesoura }) => {
 
   const dados = dadosTotalTesoura.map((item, index) => {
@@ -17,8 +16,6 @@ export const ActionListaVendasTesoura = ({ dadosTotalTesoura }) => {
     }
   });
   
-
-
   const colunasTesoura = [
     {
       field: 'NOFANTASIA',
@@ -76,8 +73,7 @@ export const ActionListaVendasTesoura = ({ dadosTotalTesoura }) => {
 
         </div>
       </div>
-
-
+      
     </Fragment>
   )
 
